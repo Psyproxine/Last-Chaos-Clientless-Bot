@@ -1,0 +1,58 @@
+[basic]
+
+relogin=5
+timeout=60
+
+[attack]
+auto=1
+'attack
+speed=1100
+autoskill=1#1B#100#40
+' use skill every monster , point1 on/off, point2 SkillID, hp%underflow, mp%overflow
+
+[path]
+'lock=1#1435#577#150#150#7
+'lock=1#1470#100#150#150#7
+'lock=1#75#1060#150#150#7
+lock=1#70#955#120#120#7
+
+
+[heal]
+hp1=1#1F#92#5
+'use#division, point1 [on/off], point2 SkillID, point3 HP%underflow, ???????4 MP%overflow
+sit_hp=1#60#80
+'??? # ?division, point1 [1on / 2off], point2 sit hp<%, point3 use hp>%
+
+sit_mp=0#10#30
+'use # division, point1 [1on / 2off], point2 sit mp<%, point3 stand mp>???%
+
+hp_recon=1#75
+'use # division, point1 [1on / 2off], point2 hp< % bot reconnecting
+
+
+[party]
+follow_atk=0#Positron
+
+invite=0#Janeku1;Janeku2#2
+'party invite ,point1 on/off,point2 name, point3 party type 0-2
+
+response=1#Janeku;Positron
+'party Accept have over 1 character use;
+
+follow=1#Positron#30#5
+'Attack flow have over 1 character use;
+
+protect=0#Positron
+' Monster Party Protec
+
+hp1=1#Positron;Janeku#20#75#10
+'use to hp0-hp4, point1 [1/on] [0/off] , point2 Name (not use is every body In party, many character use;), point3 SkillID Look In data/skill.txt, point4 %hp low get start, mplow get start
+
+mp1=0#Name#21#60#30
+'use to mp0-mp4, point1 [1/on] [0/off] , point2 Name(not use is every body In party, many character use;), point3 SkillID Look In data/skill.txt, point4 %mplow get start, mplow get start
+[debug]
+show=1
+
+[useitem]
+hp=1#60
+mp=1#60
